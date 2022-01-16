@@ -4,6 +4,7 @@ public class CountEvenDigitInArray {
     public static void main(String[] args) {
         int [] num={55,901,482,00,177,-33};
         System.out.println(countDigitInArray(num));
+        System.out.println(countDigit(343434));
     }
     static int countDigitInArray(int [] nums){
         int count=0;
@@ -23,11 +24,6 @@ public class CountEvenDigitInArray {
         if(num < 0){
             num =num * -1;
         }
-        int count=0;
-        while(num > 0){
-            count++;
-            num=num/10;
-        }
-        return count;
+        return (int)(Math.log10(num))+1;
     }
 }
