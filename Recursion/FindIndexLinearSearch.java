@@ -13,7 +13,7 @@ public class FindIndexLinearSearch {
         System.out.println(findAllIndex1(arr,target,0,new ArrayList<Integer>()));
         System.out.println(findAllIndex3(arr,target,0));
 
-    }
+    }//
     //find INDEX in array if exist otherwise return False
     public static int searchINdex(int[]arr,int target,int index){
         if(index == arr.length){
