@@ -7,7 +7,7 @@ public class NoStepsReduceNumZero {
     }
     static int countSteps(int n){
         return helper(n,0);
-    }
+    }//
     public static int helper(int n,int count){
         if(n==0){
             return count;
