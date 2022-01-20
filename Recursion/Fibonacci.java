@@ -4,7 +4,7 @@ public class Fibonacci {
     public static void main(String[] args) {
         System.out.println(fibo(100));
 
-    }
+    }//
     static int fibo(int n){
         if(n < 2){
             return n;
