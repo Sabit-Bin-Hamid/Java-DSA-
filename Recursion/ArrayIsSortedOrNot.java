@@ -6,6 +6,7 @@ public class ArrayIsSortedOrNot {
         System.out.println(sorted(arr,0));
 
     }
+    //
     static boolean sorted( int [] arr,int index){
         if(index==arr.length-1){
             return true;
