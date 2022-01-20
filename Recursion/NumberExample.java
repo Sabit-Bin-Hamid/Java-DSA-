@@ -8,7 +8,7 @@ public class NumberExample {
         if(n==10){
             System.out.println(10);
             return;
-        }
+        }//
         System.out.println(n);
         prints(n+1);
     }
