@@ -17,6 +17,7 @@ public class BinarySearch {
         if(target < arr[mid]){
             return search(arr,target,s,mid-1);
         }
+        //
         return search(arr,target,mid+1,e);
     }
 
