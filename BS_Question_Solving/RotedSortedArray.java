@@ -6,7 +6,7 @@ package com.sourav.Problem_Solving.BS_Question_Solving;
 public class RotedSortedArray {
     public static void main(String[] args) {
         int [] num={3,5,1};
-        int target=3;
+        int target=1;
         System.out.println(search(num,target));
     }
     public static int search(int [] arr,int target){
