@@ -6,7 +6,7 @@ public class SplitArray {
         //
         //Write an algorithm to minimize the largest sum among these m subarrays.
         int[] nums={7,2,5,10,8};
-        int m=2;
+        int m=3;
         System.out.println(splitArray(nums,m));
 
     }
