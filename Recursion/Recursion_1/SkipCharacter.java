@@ -1,6 +1,6 @@
 package com.sourav.Problem_Solving.Recursion.Recursion_1;
 
-public class removeCharacter {
+public class SkipCharacter {
     public static void main(String[] args) {
         String str="aaccbbd";
         skip("",str);
