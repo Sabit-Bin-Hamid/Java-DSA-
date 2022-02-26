@@ -8,6 +8,7 @@ public class NumberPad {
         pad("",number);
         System.out.println("store in Array list");
         System.out.println(padArrayList("",number));
+        System.out.println(padCount("",number));
     }
     static  void pad(String p,String up){
         if(up.isEmpty()){
@@ -20,7 +21,7 @@ public class NumberPad {
             pad(p+ch,up.substring(1));
         }
     }
-    
+
 
     static ArrayList<String> padArrayList(String p, String up){
         if(up.isEmpty()){
@@ -35,5 +36,19 @@ public class NumberPad {
             ans.addAll(padArrayList(p+ch,up.substring(1)));
         }
         return ans;
+    }
+
+    static int padCount(String p, String up){
+        if(up.isEmpty()){
+            return 1;
+        }
+        int digit= up.charAt(0)-'0';
+        ArrayList<String> ans=new ArrayList<>();
+        int count=0;
+        for (int i = (digit-1)*3; i <digit*3 ; i++) {
+            char ch= (char)('a'+i);
+            count=count+(padCount(p+ch,up.substring(1)));
+        }
+        return count;
     }
 }
